@@ -125,6 +125,7 @@ function check(button) {
       winCounter++;
       if (winCounter == lines.length) {
         ////// WIN CONDITION
+        winDisplay.innerText = "You win!";
         winDisplay.style.display = "block";
         document.getElementsByClassName("screen")[0].style.opacity = 0.5;
       }
