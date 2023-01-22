@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  cursor: default;
+}
+
+/* /////////////////////////////////////////////////////////////////////////  */
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+}
+
+#reset:hover {
+  color: rgb(177, 177, 177);
+  background-color: rgba(177, 177, 177, 0.612);
+  border-radius: 5px;
+  box-shadow: 0px 3px rgba(177, 177, 177, 0.073);
+}
+
+#reset:active {
+  color: rgb(242, 178, 54);
+}
+
+/* /////////////////////////////////////////////////////////////////////////  */
+body {
+  height: 100vh;
+  background-color: rgb(4, 40, 40);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: rgb(0, 166, 255);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+main {
+  width: 35%;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  height: 75px;
+  font-size: 15px;
+}
+.head-icons {
+  width: 20%;
+  height: auto;
+  text-align: center;
+  padding: 5px 0;
+}
+.turn {
+  background-color: rgb(10, 84, 84);
+  border-radius: 5px;
+  box-shadow: 0px 7px rgba(0, 0, 0, 0.423);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+#reset {
+  background-color: rgb(177, 177, 177);
+  border-radius: 5px;
+  box-shadow: 0px 3px rgba(177, 177, 177, 0.612);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.play-area {
+  display: flex;
+  height: 350px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tile {
+  width: 28%;
+  height: 30%;
+  background-color: rgb(10, 84, 84);
+  border-radius: 15px;
+  box-shadow: 0px 7px rgba(0, 0, 0, 0.423);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8vw;
+  color: rgb(0, 166, 255);
+  cursor: pointer;
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 75px;
+  margin-top: 5px;
+}
+
+.foot-icons {
+  width: 25%;
+  height: 90%;
+  font-size: 13px;
+  background-color: white;
+
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#player-score {
+  background-color: rgb(0, 166, 255);
+}
+#tie {
+  background-color: rgb(177, 177, 177);
+}
+#cpu-score {
+  background-color: #f2b236;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+.krizic {
+  font-size: 60px;
+  padding: 0 5px;
+  color: rgb(0, 166, 255);
+}
+
+.kruzic {
+  font-size: 42px;
+  padding: 0 5px;
+  margin-bottom: 1px;
+  color: rgb(242, 178, 54);
+}
+
+span {
+  font-size: 15px;
+  padding-left: 3px;
+  color: rgb(177, 177, 177);
+}
+
+#winnerDisplay {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  padding: 1%;
+  font-size: 40px;
+  color: rgb(0, 166, 255);
+}
+
+#signDisplay {
+  font-size: 80px;
+  text-align: center;
+}
+
+#final-winner {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  padding: 10px;
+  display: none;
+  color: #f2b236;
+  font-size: 30px;
+  width: fit-content;
+}

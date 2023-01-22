@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
+    <main>
+      <div class="game-area">
+        <div class="head">
+          <div class="icons head-icons">
+            <div class="krizic">×</div>
+            <div class="kruzic">O</div>
+          </div>
+          <div class="turn head-icons"><span id="turn">×</span> turn</div>
+          <button id="reset" class="head-icons">Reset</button>
+        </div>
+        <div class="play-area">
+          <div class="tile" id="1"></div>
+          <div class="tile" id="2"></div>
+          <div class="tile" id="3"></div>
+          <div class="tile" id="4"></div>
+          <div class="tile" id="5"></div>
+          <div class="tile" id="6"></div>
+          <div class="tile" id="7"></div>
+          <div class="tile" id="8"></div>
+          <div class="tile" id="9"></div>
+        </div>
+        <div class="foot">
+          <div id="player-score" class="foot-icons">
+            × (PLAYER 1):
+            <p id="player1-result"></p>
+          </div>
+
+          <div id="tie" class="foot-icons">
+            Ties:
+            <p id="tie-result"></p>
+          </div>
+          <div id="cpu-score" class="foot-icons">
+            O (PLAYER 2):
+            <p id="player2-result"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="winnerDisplay">
+      <p>Round winner:</p>
+      <div id="signDisplay"></div>
+    </div>
+    <div id="final-winner"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

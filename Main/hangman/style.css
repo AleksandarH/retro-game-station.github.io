@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  user-select: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(150, 149, 149);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+p {
+  text-align: center;
+  font-size: 35px;
+  padding: 5px;
+
+  height: 5%;
+}
+h1 {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+li {
+  cursor: pointer;
+  width: 4%;
+  height: 5%;
+  border: 2px solid rgb(0, 94, 255);
+  padding: 1%;
+  margin: 1%;
+  font-size: 4vh;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: center;
+  color: whitesmoke;
+  background-color: gray;
+}
+
+li:hover {
+  transform: scale(1.05);
+}
+
+#letterDisplay {
+  text-align: center;
+}
+
+.container {
+  height: 6%;
+}
+#letterDisplay > li {
+  width: 4%;
+  height: 8vh;
+  cursor: default;
+  border: none;
+  border-bottom: 5px solid green;
+  padding: 0.3% 1%;
+  margin: none;
+  font-size: 5vh;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: center;
+  color: whitesmoke;
+  background-color: gray;
+}
+
+#letterDisplay > li:hover {
+  transform: none;
+}
+
+#tries {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tryCounter {
+  text-align: center;
+  width: 5%;
+  padding: 10px;
+  background-color: rgb(53, 64, 46);
+  color: wheat;
+}
+
+h3 {
+  text-align: center;
+}
+button {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  width: 10%;
+  font-size: 3vh;
+  padding: 0.5%;
+  font-weight: 700;
+  background-color: gray;
+  color: rgb(224, 152, 19);
+  border-radius: 10px;
+  z-index: 999999999999;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 5px black;
+  background-color: rgb(224, 152, 19);
+  color: gray;
+}
+button:active {
+  transform: scale(1.05);
+}
+
+body {
+  opacity: 1;
+}
+#winDisplay {
+  display: none;
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  color: white;
+  border-radius: 5px;
+  border: 2px solid gold;
+  box-shadow: 5px 5px 10px rgba(255, 217, 0, 0.625);
+  width: 400px;
+  padding: 50px 20px;
+  top: 40%;
+  left: 37%;
+  text-align: center;
+  font-size: 6vh;
+  opacity: 1;
+}
+
+/* Hangman drawings */
+
+#hangman {
+  position: absolute;
+  width: 300px;
+  height: 320px;
+  background-color: rgb(88, 87, 87);
+  right: 80px;
+  top: 40px;
+}
